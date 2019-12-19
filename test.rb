@@ -47,11 +47,11 @@ pigeon_names.each_key do |bird_name| #iterate through the birds' names
     return_hash[bird_name][key] = []
     
     pigeon_data[key].each do |caracteristic_key, caracteristic_value|
-      # puts "a key dentro da caracteristica é #{caracteristic_key}"
-      # puts "o value dentro da caracteristica é #{caracteristic_value}"
+      puts "a key dentro da caracteristica é #{caracteristic_key}"
+      puts "o value dentro da caracteristica é #{caracteristic_value}"
       caracteristic_value.length.times do |index|
         if caracteristic_value[index] == bird_name
-          puts "é igual"
+          #puts "é igual #{} e #{} então adicione "
         end 
       end
     end
