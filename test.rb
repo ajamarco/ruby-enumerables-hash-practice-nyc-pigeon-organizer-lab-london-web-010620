@@ -66,7 +66,9 @@ def get_pigeon_names(birds_hash)
     birds_hash[key].each do |key2, value2| #iterate through the hash within
       puts "\n\n Aqui temos a key #{key2} e o value #{value2}"
       #add into the array the bird name inside this hash
-      names_array.push(value2[0]) 
+      value2.length.times do |index|
+        puts "dentro do array. o valor atual é #{value2[index]}"
+      end
     end
   end
   names_array.uniq! #drop all duplicated names 
