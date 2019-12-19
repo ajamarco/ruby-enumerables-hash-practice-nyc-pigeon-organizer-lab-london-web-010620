@@ -43,8 +43,8 @@ pigeon_names.each_key do |bird_name|
   pigeon_data.each do |key, value|
     puts "dentro do data. A key é #{key} e o value é #{value}"
     pigeon_data[key].each do |caracteristic_key, caracteristic_value|
-      puts caracteristic_key
-      puts caracteristic_value
+      puts "a key dentro da caracteristica é #{caracteristic_key}"
+      puts "o value dentro da caracteristica é #{caracteristic_value}"
     end
   end 
 end
