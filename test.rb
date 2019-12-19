@@ -79,7 +79,35 @@ end
 #==================================================================
 
 return_hash = get_pigeon_names(pigeon_data)
-
+return_hash.each_key do |bird_name| #iterate through the birds' names
+  puts "o nome do passaro é #{bird_name}"
+  pigeon_data.each do |key, value| #iterate the original data 
+    puts "dentro do data. A key é #{key} e o value é #{value}"
+    
+    #add the characteristic to the bird's hash 
+    return_hash[bird_name][key] = []
+    
+    pigeon_data[key].each do |caracteristic_key, caracteristic_value|
+      puts "a key dentro da caracteristica é #{caracteristic_key}"
+      puts "o value dentro da caracteristica é #{caracteristic_value}"
+      caracteristic_value.length.times do |index|
+        if caracteristic_value[index] == bird_name
+          puts "\n\n\n"
+          puts "é igual #{caracteristic_value[index]} e #{bird_name}"
+          puts "então adicione #{caracteristic_key} ao passaro #{bird_name} na caracteristica #{key}"
+          p caracteristic_key
+          if caracteristic_key.instance_of? String
+            return_hash[bird_name][key].push(caracteristic_key)
+          else
+            return_hash[bird_name][key].push(caracteristic_key.to_s)
+          end
+          puts caracteristic_key.instance_of? String
+          puts "\n\n\n"
+        end 
+      end
+    end
+  end 
+end
 pp return_hash
 puts "\n\n"
 pp goal
