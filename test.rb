@@ -55,7 +55,7 @@ pigeon_names.each_key do |bird_name| #iterate through the birds' names
           puts "é igual #{caracteristic_value[index]} e #{bird_name}"
           puts "então adicione #{caracteristic_key} ao passaro #{bird_name} na caracteristica #{key}"
           p caracteristic_key
-          puts caracteristic_key.instance_of? Object
+          puts caracteristic_key.instance_of? String
           puts "\n\n\n"
         end 
       end
