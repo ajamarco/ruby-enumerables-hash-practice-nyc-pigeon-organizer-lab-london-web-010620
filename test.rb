@@ -44,9 +44,7 @@ end
 #     puts "dentro do primeiro hash #{data_key}"
 #     pigeon_data[data_key].each do |key2, value2|
 #       puts "aqui precisamos fazer o times dentro do #{value2}"
-#       if value2.include?(key)
-#         "#{key} está dentro de #{value2}"
-#       end
+#       
 #     end
 #   end 
 # end
