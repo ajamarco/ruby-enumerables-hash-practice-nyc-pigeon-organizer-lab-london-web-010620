@@ -78,5 +78,5 @@ def get_pigeon_names(birds_hash)
 end 
 
 birds_names = get_pigeon_names(pigeon_data)
-
+puts birds_names
 
