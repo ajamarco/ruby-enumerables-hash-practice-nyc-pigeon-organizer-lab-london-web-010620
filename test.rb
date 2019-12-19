@@ -37,20 +37,17 @@ def get_pigeon_names(birds_hash)
 end 
 #==================================================================
 
-# return_hash = pigeon_names
-# pigeon_names.each_key do |key|
-#   puts "o nome do passaro é #{key}"
-#   pigeon_data.each_key do |data_key|
-#     puts "dentro do primeiro hash #{data_key}"
-#     pigeon_data[data_key].each do |key2, value2|
-#       puts "aqui precisamos fazer o times dentro do #{value2}"
-#       
-#     end
-#   end 
-# end
-
-test_array = ["a", "b", "c"]
-if test_array.include?("c")
-  puts "é nóis"
+return_hash = pigeon_names
+pigeon_names.each_key do |key|
+  puts "o nome do passaro é #{key}"
+  pigeon_data.each_key do |data_key|
+    puts "dentro do primeiro hash #{data_key}"
+    pigeon_data[data_key].each do |key2, value2|
+      puts "aqui precisamos fazer o times dentro do #{value2}"
+      
+    end
+  end 
 end
+
+
 
