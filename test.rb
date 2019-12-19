@@ -44,7 +44,7 @@ pigeon_names.each_key do |bird_name| #iterate through the birds' names
     puts "dentro do data. A key é #{key} e o value é #{value}"
     
     #add the characteristic to the bird's hash 
-    return_hash[bird_name][key] = {}
+    return_hash[bird_name][key] = []
     
     
     pigeon_data[key].each do |caracteristic_key, caracteristic_value|
