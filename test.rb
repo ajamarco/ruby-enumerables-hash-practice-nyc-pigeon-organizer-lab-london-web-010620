@@ -42,7 +42,9 @@ pigeon_names.each_key do |bird_name|
   puts "o nome do passaro é #{bird_name}"
   pigeon_data.each do |key, value|
     puts "dentro do data. A key é #{key} e o value é #{value}"
-    
+    pigeon_data[key].each_value do |values|
+      puts values
+    end
   end 
 end
 
