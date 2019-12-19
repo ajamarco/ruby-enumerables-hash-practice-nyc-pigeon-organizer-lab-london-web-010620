@@ -67,6 +67,6 @@ pigeon_names.each_key do |bird_name| #iterate through the birds' names
     end
   end 
 end
-
+puts return_hash
 
 
