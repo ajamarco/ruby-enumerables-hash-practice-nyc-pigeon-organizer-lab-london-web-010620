@@ -17,5 +17,8 @@ def get_pigeon_names(birds_hash)
 end
 
 def nyc_pigeon_organizer(data)
-  return_has
+  hash_to_return = get_pigeon_names(data)
+  
+  
+  
 end
