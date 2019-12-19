@@ -41,7 +41,7 @@ return_hash = pigeon_names
 pigeon_names.each_key do |key|
   puts "o nome do passaro é #{key}"
   pigeon_data.each do |key, value|
-    "dentro do data. A key é #{key} e o value é #{value}"
+    puts "dentro do data. A key é #{key} e o value é #{value}"
   end 
 end
 
