@@ -35,17 +35,11 @@ def nyc_pigeon_organizer(data)
         puts "o value dentro da caracteristica é #{caracteristic_value}"
         caracteristic_value.length.times do |index|
           if caracteristic_value[index] == bird_name
-            puts "\n\n\n"
-            puts "é igual #{caracteristic_value[index]} e #{bird_name}"
-            puts "então adicione #{caracteristic_key} ao passaro #{bird_name} na caracteristica #{key}"
-            p caracteristic_key
             if caracteristic_key.instance_of? String
               hash_to_return[bird_name][key].push(caracteristic_key)
             else
               hash_to_return[bird_name][key].push(caracteristic_key.to_s)
             end
-            puts caracteristic_key.instance_of? String
-            puts "\n\n\n"
           end 
         end
       end
