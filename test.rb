@@ -109,6 +109,6 @@ return_hash.each_key do |bird_name| #iterate through the birds' names
   end 
 end
 pp return_hash
-puts return_hash == goal
+pp goal
 
 
