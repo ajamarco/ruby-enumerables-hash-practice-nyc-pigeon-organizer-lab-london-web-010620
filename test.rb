@@ -40,12 +40,8 @@ end
 return_hash = pigeon_names
 pigeon_names.each_key do |key|
   puts "o nome do passaro é #{key}"
-  pigeon_data.each_key do |data_key|
-    puts "dentro do primeiro hash #{data_key}"
-    pigeon_data[data_key].each do |key2, value2|
-      puts "aqui precisamos fazer o times dentro do #{value2}"
-      
-    end
+  pigeon_data.each do |key, value|
+    "dentro do data. A key é #{key} e o value é #{value}"
   end 
 end
 
