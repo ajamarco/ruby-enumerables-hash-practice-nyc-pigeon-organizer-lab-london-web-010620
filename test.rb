@@ -80,9 +80,9 @@ def get_pigeon_names(birds_hash)
   returned_hash
 end 
 
-pigeon_names = get_pigeon_names(pigeon_data)
-return_hash = {}
-pigeon_names.each_key do |bird_name| #iterate through the birds' names
+return_hash = get_pigeon_names(pigeon_data)
+
+return_hash.each_key do |bird_name| #iterate through the birds' names
   puts "o nome do passaro é #{bird_name}"
   pigeon_data.each do |key, value| #iterate the original data 
     puts "dentro do data. A key é #{key} e o value é #{value}"
