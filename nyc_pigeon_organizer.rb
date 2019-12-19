@@ -37,9 +37,9 @@ def nyc_pigeon_organizer(data)
             puts "então adicione #{caracteristic_key} ao passaro #{bird_name} na caracteristica #{key}"
             p caracteristic_key
             if caracteristic_key.instance_of? String
-              return_hash[bird_name][key].push(caracteristic_key)
+              hash_to_return[bird_name][key].push(caracteristic_key)
             else
-              return_hash[bird_name][key].push(caracteristic_key.to_s)
+              hash_to_return[bird_name][key].push(caracteristic_key.to_s)
             end
             puts caracteristic_key.instance_of? String
             puts "\n\n\n"
