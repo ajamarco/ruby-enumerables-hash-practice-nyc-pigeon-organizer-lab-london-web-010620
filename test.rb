@@ -62,6 +62,7 @@ pigeon_data = {
 def get_pigeon_names(birds_hash)
   names_array = [] #create a new array to hold the birds' names
   birds_hash.each do |key, value| #iterate through the parent hash
+    puts "iterando pelo parent hash. a key é #{key} e o value é #{value}"
     birds_hash[key].each do |key2, value2| #iterate through the hash within
       #add into the array the bird name inside this hash
       names_array.push(value2[0]) 
@@ -78,5 +79,5 @@ def get_pigeon_names(birds_hash)
 end 
 
 birds_names = get_pigeon_names(pigeon_data)
-puts birds_names
+#puts birds_names
 
