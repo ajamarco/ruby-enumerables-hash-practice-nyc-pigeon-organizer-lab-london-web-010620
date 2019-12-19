@@ -1,16 +1,38 @@
 pigeon_data = {
-  :color => {
-    :brown => ["Luca"],
-    :black => ["Lola"],
-    :blue => ["Luca", "Lola"]
+  "Theo" => {
+    :color => ["purple", "grey"],
+    :gender => ["male"],
+    :lives => ["Subway"]
   },
-  :gender => {
-    :male => ["Luca"],
-    :female => ["Lola"]
+  "Peter Jr." => {
+    :color => ["purple", "grey"],
+    :gender => ["male"],
+    :lives => ["Library"]
   },
-  :lives => {
-    "Central Park" => ["Lola", "Luca"],
-    "Library" => ["Luca"]
+  "Lucky" => {
+    :color => ["purple"],
+    :gender => ["male"],
+    :lives => ["Central Park"]
+  },
+  "Ms .K" => {
+    :color => ["grey", "white"],
+    :gender => ["female"],
+    :lives => ["Central Park"]
+  },
+  "Queenie" => {
+    :color => ["white", "brown"],
+    :gender => ["female"],
+    :lives => ["Subway"]
+  },
+  "Andrew" => {
+    :color => ["white"],
+    :gender => ["male"],
+    :lives => ["City Hall"]
+  },
+  "Alex" => {
+    :color => ["white", "brown"],
+    :gender => ["male"],
+    :lives => ["Central Park"]
   }
 }
 
@@ -37,8 +59,8 @@ def get_pigeon_names(birds_hash)
 end 
 #==================================================================
 
-return_hash = pigeon_names
-pigeon_names.each_key do |bird_name| #iterate through the birds' names
+return_hash = get_pigeon_names(pigeon_data)
+return_hash.each_key do |bird_name| #iterate through the birds' names
   puts "o nome do passaro é #{bird_name}"
   pigeon_data.each do |key, value| #iterate the original data 
     puts "dentro do data. A key é #{key} e o value é #{value}"
