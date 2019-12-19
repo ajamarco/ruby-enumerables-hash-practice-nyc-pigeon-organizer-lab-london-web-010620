@@ -50,7 +50,7 @@ end
 # end
 
 test_array = ["a", "b", "c"]
-if test_array.include?("d")
+if test_array.include?("c")
   puts "é nóis"
 end
 
