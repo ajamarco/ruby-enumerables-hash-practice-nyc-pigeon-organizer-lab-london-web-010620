@@ -45,7 +45,9 @@ pigeon_names.each_key do |bird_name|
     pigeon_data[key].each do |caracteristic_key, caracteristic_value|
       puts "a key dentro da caracteristica é #{caracteristic_key}"
       puts "o value dentro da caracteristica é #{caracteristic_value}"
-      puts caracteristic_value[0] == bird_name
+      if caracteristic_value[0] == bird_name
+        puts "o nome do passaro #{bird_name} é igual a #{caracteristic_value[0]}"
+      end
     end
   end 
 end
